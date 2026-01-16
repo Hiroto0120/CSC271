@@ -1,0 +1,12 @@
+owner_name,pet_name,pet_nickname,species,appointment_date,last_visit,num_visits,type,insurance_provider,estimated_cost
+Aisha Khan,Bella,B,Dog,2026-02-01 09:30,15/01/2025,3,Annual checkup,HealthyPaws,120.75
+Miguel Torres,WHiskers,,Cat,2026-02-03 14:00,10/12/2022,2,Vaccination,,80
+Priya Patel,Goldie,,Fish,,,,,AquaLife,
+Kwame Mensah,Rex,Rexy,Dog,2026-02-03 16:45,20/02/2025,4,,,0
+Sofia Gonzalez,MITTENS,,Cat,2026-02-03 10:00,12/03/2024,2,Nail trim,PetShield,15.50
+Hiro Tanaka,Bella,,Dog,2026-01-30 13:30,05/04/2023,3,Checkup,,120.75
+Fatima Al-Sayed,Fluffy,,Rabbit,2026-01-30 09:45,25/01/2025,2,Vaccination,PetCarePlus,90
+Jamal Johnson,shadow,,Cat,2026-02-01 15:00,,,,,
+Leila Hassan,Goldy,Go-go,Dog,2026-02-01 11:30,05/01/2026,2,Checkup,,
+Jamal Johnson,shadow,,Cat,2026-02-01 15:00,,,,,
+Tomasz Nowak,Snowball,Snowie,Rabbit,,01/05/2002,5,Vaccination,,140
