@@ -70,8 +70,35 @@ def fill_missing_volumes(df: pd.DataFrame, strategy: str) -> None:
 
 ### Task 2: Data Exploration and Analysis Functions ###
 
+def filter_with_volume(df: pd.DataFrame, col: str, val: str, vol: int) -> pd.DataFrame:
+    """"""
+    fil = (df[col] == val) & (df[VOLUME] >= vol)
+    return df[fil]
 
+def find_port_name(df: pd.DataFrame, id: int) -> str:
+    """"""
+    row = df[df[PORT_ID] == id]
+    return row[PORT_NAME][0]
 
+def get_mean_volume_by(df: pd.DataFrame, col: str) -> pd.Series:
+    """"""
+    return df.groupby[col][VOLUME].mean()
+
+def get_top_n_by_volume(df: pd.DataFrame, col: str, n: int) -> pd.Series:
+    total = df.groupby(col)[VOLUME].sum()
+    order = total.sort_values(ascending = False)
+    return order.head(n)
+
+def compute_volume_by_time(df: pd.DataFrame, col: str, year: int, month: int) -> pd.Series:
+    """"""
+    f_year = df[DATE].dt.year == year
+    if month != -1:
+        f_year = f_year & (df[DATE].dt.month == month)
+    f_df = df[f_df]
+    return f_df.groupby(col)[VOLUME].sum()
+
+def calculate_volume_change(df: pd.DataFrame, col: str, in_year: int, in_month: int, fi_year: int, fi_month: int) -> pd.Series:
+    return compute_volume_by_time(df, col, fi_year, fi_month) - compute_volume_by_time(df, col, in_year, in_month)
 
 
 if __name__ == "__main__":
